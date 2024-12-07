@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Doctor's Solution</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Doctor Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="send_email.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="doctor">Choose Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="Dr. John Doe">Dr. John Doe - Cardiologist</option>
+                <option value="Dr. Jane Smith">Dr. Jane Smith - Dermatologist</option>
+                <option value="Dr. Mahmudul Hasan">Dr. Mahmudul Hasan - Orthopedic Surgeon</option>
+                <option value="Dr. Nusrat Jahan">Dr. Nusrat Jahan - Pediatrician</option>
+                <option value="Dr. Ahsanul Islam">Dr. Ahsanul Islam - General Medicine</option>
+                <option value="Dr. Fahad Khan">Dr. Fahad Khan - Neurologist</option>
+                <option value="Dr. Shamsul Alam">Dr. Shamsul Alam - Gastroenterologist</option>
+                <option value="Dr. Sultana Zaman">Dr. Sultana Zaman - Obstetrician & Gynecologist</option>
+                <option value="Dr. Md. Rashedul Alam">Dr. Md. Rashedul Alam - Urologist</option>
+                <option value="Dr. Tanveer Hasan">Dr. Tanveer Hasan - Ophthalmologist</option>
+            </select>
+
+            <label for="date">Preferred Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Appointment Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Doctor's Solution. All rights reserved.</p>
+    </footer>
+</body>
+</html>
